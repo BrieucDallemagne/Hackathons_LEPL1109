@@ -14,8 +14,8 @@
 
 ## Deadline
 
-| Semaine | TO DO |
-| :-----: | :---: |
-| **S4**  |    *First Hackathon, in class. Don't forget to bring one laptop per group.*   |
-| **S11** |       |
-| **S13** |       |
+| Semaine |                                  TO DO                                   |
+| :-----: | :----------------------------------------------------------------------: |
+| **S4**  | *First Hackathon, in class. Don't forget to bring one laptop per group.* |
+| **S11** |                                                                          |
+| **S13** |                                                                          |
