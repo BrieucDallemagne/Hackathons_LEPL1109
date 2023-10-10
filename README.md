@@ -10,7 +10,7 @@
 |                         Étudiant                         |                  Étudiant                   |                     Étudiant                      |
 | :------------------------------------------------------: | :-----------------------------------------: | :-----------------------------------------------: |
 | [Dallemagne Brieuc](https://github.com/BrieucDallemagne) | [Debelle Thomas](https://github.com/Tfloow) |               De vleeschouwer Nora                |
-|      [Lebras Floriane](https://github.com/fllebras)      |               Martin Antoine                | [Orekhoff Alexandre](https://github.com/Hokkaydo) |
+|      [Lebras Floriane](https://github.com/fllebras)      |               Martin Antoine                | [Orékhoff Alexandre](https://github.com/Hokkaydo) |
 
 ## Deadline
 
