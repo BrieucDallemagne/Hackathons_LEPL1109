@@ -16,7 +16,7 @@
 ## Répartition
 
 1. Brieuc
-2. Floriane
+2. Floriane et Nora
 3. Martin et Thomas
 
 ## Deadline
