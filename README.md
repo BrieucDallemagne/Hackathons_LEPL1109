@@ -10,13 +10,13 @@
 
 |                         Étudiant                         |                  Étudiant                   |                     Étudiant                      |
 | :------------------------------------------------------: | :-----------------------------------------: | :-----------------------------------------------: |
-| [Dallemagne Brieuc](https://github.com/BrieucDallemagne) | [Debelle Thomas](https://github.com/Tfloow) |               De vleeschouwer Nora                |
+| [Dallemagne Brieuc](https://github.com/BrieucDallemagne) | [Debelle Thomas](https://github.com/Tfloow) |               [De vleeschouwer Nora](https://github.com/weGettingDegrees)                |
 |      [Lebras Floriane](https://github.com/fllebras)      |               [Martin Antoine](https://github.com/antoinemrt1)                | [Orékhoff Alexandre](https://github.com/Hokkaydo) |
 
 ## Répartition
 
 1. Brieuc
-2. Floriane
+2. Floriane et Nora
 3. Martin et Thomas
 
 ## Deadline
