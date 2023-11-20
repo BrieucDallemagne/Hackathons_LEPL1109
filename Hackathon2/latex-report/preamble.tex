@@ -1,0 +1,119 @@
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}  
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{fancybox}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx,subfigure}
+\usepackage[titletoc]{appendix}
+\usepackage{float} % figures flottantes 
+\usepackage{here} % figures flottantes
+\usepackage{url}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, nolistsep}
+\setlist[enumerate]{noitemsep, nolistsep}
+\usepackage{xcolor}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[skins,breakable]{tcolorbox}
+\usepackage{lipsum}  
+
+
+% --------------------------------------------------------------
+% Title
+% --------------------------------------------------------------
+\makeatletter
+\newcommand\maintitle[1]{
+    \quitvmode
+    \hb@xt@\linewidth{
+        \dimen@=1ex
+        \advance\dimen@-2pt
+        \leaders\hrule \@height1ex \@depth-\dimen@\hfill
+        \enskip
+        \textbf{#1}
+        \enskip
+        \leaders\hrule \@height1ex \@depth-\dimen@\hfill
+    }
+}
+\makeatother
+
+% --------------------------------------------------------------
+% Some parameters
+% --------------------------------------------------------------
+\oddsidemargin =0 mm
+\topmargin = -10 mm
+\footskip = 20mm
+\textheight = 240 mm 
+\textwidth = 160mm
+
+% --------------------------------------------------------------
+% Q&A environments
+% --------------------------------------------------------------
+
+\usepackage{tikz}
+
+\newcommand{\emptyquestion}{Please fill this space with your question.}
+
+\newcommand{\emptyanswer}{Please fill this space with your answer.}
+
+\newcounter{question}
+
+\definecolor{question_color}{RGB}{7,128,164}
+\definecolor{question_color_fill}{RGB}{247,247,247}
+
+\newcommand{\thequestionref}{No reference}
+
+\makeatletter
+\newenvironment{question}[1]
+{
+\refstepcounter{question}
+\def\@currentlabel{{#1}}
+\label{ref-question-\thequestion}
+\addcontentsline{toc}{subsection}{{#1}}
+\noindent
+\begin{tcolorbox}[
+    colframe=question_color,
+    colback=question_color_fill,
+    coltitle=question_color_fill,  
+    title=\centering\textbf{Question #1},
+    breakable,
+    width=\textwidth]
+}
+{   \end{tcolorbox}
+}
+\makeatother
+
+
+
+
+\newenvironment{answer}[1]
+{
+\def\L{#1}
+\noindent
+{
+\hypersetup{allcolors=question_color}
+\flushleft
+\begin{tikzpicture}
+	
+    \draw[very thick,question_color] (0,0) -- ++(0,+7.5pt)
+    -- ++(\textwidth,0) node[midway,above] {\textbf{Answer to \ref{ref-question-\thequestion}}}
+    -- ++(0,-7.5pt);
+    
+    
+    \begin{scope}[yshift =-\L cm]
+     \draw[very thick,question_color] (0,0) -- ++(0,-7.5pt)
+    -- ++(\textwidth,0)
+    -- ++(0,+7.5pt);
+    \end{scope}
+    
+\end{tikzpicture}
+
+\vspace{-\L cm}
+}
+\begin{tcolorbox}[blanker,width=\textwidth, height=1cm, bottom=5pt]}
+{   \end{tcolorbox}
+\vspace{\L cm}
+\flushleft
+}

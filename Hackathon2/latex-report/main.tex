@@ -1,0 +1,104 @@
+% ------------------------------------------------------------
+% DO NOT CHANGE: BEGIN
+% ------------------------------------------------------------
+
+\documentclass [a4paper, 11pt] {article}
+
+
+\input{preamble.tex}
+\begin{document}
+
+    \begin{center}
+        \Large
+        \centering
+        \maintitle{LEPL1109 - Statistics and Data Sciences}
+        \textsc{\textbf{HACKATHON 2 - Classification: Stars, Galaxies and Quasars}}\\
+    	\vspace{0.3cm}
+         \hfill Deadline: December 4, 2023 \\
+       \noindent\hrulefill
+    \end{center}
+    \vspace*{0.5cm}
+
+% ------------------------------------------------------------
+% DO NOT CHANGE: END
+% ------------------------------------------------------------
+
+
+% ------------------------------------------------------------
+% FILL WITH YOUR NAMES: BEGIN
+% ------------------------------------------------------------
+    \hspace*{-0.75cm}
+    \fbox{\parbox{\textwidth}{
+    \begin{tabularx}{\textwidth}{X|X|{c}p{2cm}}
+       \textbf{Lastname}  & \textbf{Firstname} & \textbf{Noma} \\
+       \hline
+        <Lastname 1> & <Firstname 1> & 12345678 \\
+        <Lastname 2> & <Firstname 2> & 12345678 \\
+        <Lastname 3> & <Firstname 3> & 12345678 \\
+        <Lastname 4> & <Firstname 4> & 12345678 \\
+    \end{tabularx}
+    }}
+% ------------------------------------------------------------
+% FILL WITH YOUR NAMES: END
+% ------------------------------------------------------------
+
+% ------------------------------------------------------------
+% DO NOT CHANGE: BEGIN
+% ------------------------------------------------------------
+
+    \vspace*{0.5cm}
+    
+    \hrule
+    
+    \vspace*{0.5cm}
+    
+    Please, read carefully the following guidelines:
+    \vspace*{0.2cm}
+    \begin{itemize}
+        \item Answer in English or French.
+        \item \textbf{Do not modify the layout of the document.} Tour answers will be imported into gradescope for correction. Each answer must be contained in the "zone" predefined by the template.
+        \item Clearly cite every source of information (even for pictures!);
+        \item Whenever possible, use the \texttt{.pdf} format when you export your images: this usually makes your report look prettier\footnote{This is because \texttt{.pdf} is a vector format, meaning that it keeps a perfect description of your image, while \texttt{.png} and other standard formats use compression. In other words, this means you can zoom as much as you want on your figure without decreasing image resolution. For simple plots, vector formats can also save a lot of memory space. On the other hand, we recommend using \texttt{.png} when you are plotting many data points: large scatter plots, heatmap, etc.};
+        \item Do not forget to also submit your code on Moodle.
+    \end{itemize}
+    
+    \vspace*{0.5cm}
+    
+      \hrule
+   	
+   	\vspace*{2.0cm}   
+      
+\begin{minipage}{0.5\textwidth}
+\centering
+	\includegraphics[width=0.9\textwidth]{imgs/stellar.jpeg}
+	Image source \cite{StellarImg}.
+\end{minipage}%
+\begin{minipage}{0.45\textwidth}
+The dataset \cite{carvalho_2022} consists of 100,000 observations of space taken by the SDSS (Sloan Digital Sky Survey). Every observation is described by 17 feature columns and 1 class column which identifies it to be either a star, galaxy or quasar.\\
+
+The project aims at building a ternary classifier for the following 3 classes: star, galaxy or quasar. 
+\end{minipage}
+
+    {
+    \hypersetup{allcolors=black}
+    }
+    \newpage
+    \input{sections/Part1}
+    \pagebreak
+    \input{sections/Part2}
+    \pagebreak
+    \input{sections/Part3}
+    \pagebreak
+    \input{sections/Part4}
+        
+    \pagebreak
+    \addcontentsline{toc}{section}{References}
+    \bibliographystyle{unsrt}
+    \bibliography{biblio}
+
+
+\end{document}
+
+% ------------------------------------------------------------
+% DO NOT CHANGE: END
+% ------------------------------------------------------------
